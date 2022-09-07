@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    android:background="#4CAF50"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <Button
@@ -11,7 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="128dp"
+        android:background="#2196F3"
+        android:backgroundTint="#3F51B5"
         android:text="Calcular Raiz"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/NombreUsuario"
@@ -24,7 +30,8 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Coloque un numero"
+
+        android:hint="Coloque un numero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,11 +40,12 @@
 
     <TextView
         android:id="@+id/Raiz"
-        android:layout_width="203dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="104dp"
+        android:layout_width="324dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="44dp"
-        android:text="@string/textview"
+        android:text="Raiz  del Numero"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/NombreUsuario"
         tools:ignore="MissingConstraints" />
@@ -46,10 +54,11 @@
         android:id="@+id/btnvista1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:onClick="mostrar1"
         android:text="Vita 1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnButton" />
 
@@ -57,11 +66,11 @@
         android:id="@+id/btnvista2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="48dp"
         android:onClick="mostrar2"
         android:text="Vista 2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnvista1" />
 

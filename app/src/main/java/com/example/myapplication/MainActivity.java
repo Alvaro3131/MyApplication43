@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 private Button btn, btn2, btn3;
 private EditText txtnombre;
@@ -39,5 +41,7 @@ private TextView txtraiz;
     public void mostrar2(View view){
         Intent intent1= new Intent(this,MainActivity3.class);
         startActivity(intent1);
+        ArrayList<Integer> numeros = new ArrayList();
+
     }
 }
