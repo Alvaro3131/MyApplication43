@@ -41,7 +41,13 @@ private TextView txtraiz;
     public void mostrar2(View view){
         Intent intent1= new Intent(this,MainActivity3.class);
         startActivity(intent1);
-        ArrayList<Integer> numeros = new ArrayList();
+
+
+    }
+    public void mostrar3(View view){
+        Intent intent1= new Intent(this,MainActivity4.class);
+        startActivity(intent1);
+
 
     }
 }
