@@ -17,6 +17,7 @@ private Button btn;
 private TextView result1;
 ArrayList<Integer> numeros = new ArrayList<Integer>();
  int conta=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
