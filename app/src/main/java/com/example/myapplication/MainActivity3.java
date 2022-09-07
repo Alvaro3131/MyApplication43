@@ -15,7 +15,7 @@ public class MainActivity3 extends AppCompatActivity {
 private EditText lista;
 private Button btn;
 private TextView result1;
-ArrayList<Integer> numeros = new ArrayList<Integer>();
+ArrayList<Double> numeros = new ArrayList<Double>();
  int conta=0;
 
     @Override
@@ -27,9 +27,10 @@ ArrayList<Integer> numeros = new ArrayList<Integer>();
         result1=findViewById(R.id.resultpro);
     }
     public void promediar(View view){
-        int promedio=0;
+        double promedio=0;
       if(conta<=10){
-          int numero=Integer.parseInt(String.valueOf(lista.getText()));
+
+          double numero=Double.parseDouble(String.valueOf(lista.getText()));
           numeros.add(numero);
           lista.setText("");
           conta=conta+1;
