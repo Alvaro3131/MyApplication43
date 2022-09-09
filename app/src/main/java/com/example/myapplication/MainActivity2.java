@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
 public class MainActivity2 extends AppCompatActivity {
 private Button btn;
 private EditText n1,n2,n3;
