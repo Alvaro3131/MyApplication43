@@ -51,4 +51,10 @@ ArrayList<Double> numeros = new ArrayList<Double>();
           numeros.clear();
       }
     }
+    public void principal(View view){
+        Intent intent1= new Intent(this,MainActivity.class);
+        startActivity(intent1);
+
+
+    }
 }

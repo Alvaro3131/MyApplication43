@@ -9,81 +9,75 @@
     android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/btnButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="128dp"
+        android:layout_width="146dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:background="#2196F3"
+
         android:backgroundTint="#3F51B5"
-        android:text="Calcular Raiz"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NombreUsuario"
-        app:layout_constraintVertical_bias="0.247" />
-
-    <EditText
-        android:id="@+id/NombreUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-
-        android:hint="Coloque un numero"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:onClick="mraiz"
+        android:text="Raiz de Un numero"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="40dp" />
-
-    <TextView
-        android:id="@+id/Raiz"
-        android:layout_width="324dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="44dp"
-        android:text="Raiz  del Numero"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NombreUsuario"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
         android:id="@+id/btnvista1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="155dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
         android:onClick="mostrar1"
-        android:text="Vita 1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
+        android:text="Comparacion de Numeros"
+        app:layout_constraintStart_toEndOf="@+id/btnButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnvista2"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:onClick="mostrar2"
+        android:text="Promedio de 10 numeros"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnButton" />
 
     <Button
-        android:id="@+id/btnvista2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:onClick="mostrar2"
-        android:text="Vista 2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btnvista3"
+        android:layout_width="157dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:onClick="mostrar3"
+        android:text="Calculadora"
+        app:layout_constraintStart_toEndOf="@+id/btnvista2"
         app:layout_constraintTop_toBottomOf="@+id/btnvista1" />
 
-    <Button
-        android:id="@+id/btnvista3"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="304dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Bienvenido Usuario:"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="44dp"
-        android:text="Calculadora"
-        android:onClick="mostrar3"
+        android:text="Selecciona una funcionalidad"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnvista2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

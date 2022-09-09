@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -186,6 +187,12 @@ public class MainActivity4 extends AppCompatActivity {
                 etProceso.setText("");
             }
         });
+    }
+    public void principal(View view){
+        Intent intent1= new Intent(this,MainActivity.class);
+        startActivity(intent1);
+
+
     }
 
 }

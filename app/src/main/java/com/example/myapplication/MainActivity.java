@@ -24,15 +24,11 @@ private TextView txtraiz;
         btn=findViewById(R.id.btnButton);
         btn2=findViewById(R.id.btnvista1);
         btn3=findViewById(R.id.btnvista2);
-       btn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               double nombre= Integer.parseInt(String.valueOf(txtnombre.getText()));
-               nombre=Math.sqrt(nombre);
-               txtraiz.setText("La raiz es:"+nombre);
-           }
-       });
 
+    }
+    public void mraiz(View view){
+        Intent intent1= new Intent(this,Raiz.class);
+        startActivity(intent1);
     }
     public void mostrar1(View view){
         Intent intent1= new Intent(this,MainActivity2.class);
@@ -41,11 +37,15 @@ private TextView txtraiz;
     public void mostrar2(View view){
         Intent intent1= new Intent(this,MainActivity3.class);
         startActivity(intent1);
-
-
     }
     public void mostrar3(View view){
         Intent intent1= new Intent(this,MainActivity4.class);
+        startActivity(intent1);
+
+
+    }
+    public void principal(View view){
+        Intent intent1= new Intent(this,MainActivity.class);
         startActivity(intent1);
 
 

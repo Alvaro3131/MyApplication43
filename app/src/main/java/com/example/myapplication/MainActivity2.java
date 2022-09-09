@@ -46,4 +46,9 @@ private TextView result;
 
 
     }
+    public void principal(View view){
+        Intent intent1= new Intent(this,MainActivity.class);
+        startActivity(intent1);
+
+    }
 }
